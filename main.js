@@ -24,8 +24,8 @@ form.addEventListener('submit', (e) => {
         firstName_error.innerHTML = "First name is required";
     } else {
         firstName_error.innerHTML = "";
-    }
-    if (email.value === '') {
+    };
+    if (email.value === '' ) {
         e.preventDefault();
         email_error.innerHTML = "Email or phone number is required";
     } else {
@@ -48,7 +48,7 @@ form.addEventListener('submit', (e) => {
     if (password2.value === '') {
         e.preventDefault();
         password2_error.innerHTML = "Please confirm your password";
-    } else if (password2.value.length !== password) {
+    } else if (password2.value !== password.value) {
         password2_error.innerHTML = "Passwords does not match";
     } else {
         password2_error.innerHTML = "";
